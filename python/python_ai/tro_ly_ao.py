@@ -5,7 +5,6 @@ from datetime import date, datetime
 robot_ear = speech_recognition.Recognizer()
 robot_mouth = pyttsx3.init()
 robot_brain = ""
-
 while True:
 	with speech_recognition.Microphone() as mic:
 		print("Robot:I'm listening")
