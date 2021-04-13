@@ -22,7 +22,5 @@ try:
                     if nhotam == 26:
                         nhotam = 0
         print("")
-
-    print(listcong[a-1], len(lista))
 except:
     print("nhập sai phải nhập số tự nhiên")
