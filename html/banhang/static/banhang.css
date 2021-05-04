@@ -1,0 +1,49 @@
+body{
+	margin: 0;
+}
+.header{
+	width: 100%;
+	height: 500px;
+	background-color: #D8F6CE;
+	display: block;
+}
+.header .header-contact{
+	height: 35px;
+	background-color: #242442;
+	color: #ffffff;
+	font-size: 13px;
+
+}
+.header .header-contact .notification{
+	float: right;
+	margin-right: 0;
+}
+.header .header-contact span{
+	margin-right: 20px;
+	margin-top: 8px;
+	float: left;
+}
+.header .header-contact a{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.center{
+	height: 500px;
+	background-color: #A9F5F2;
+}
+.footer{
+	width: 100%;
+	height: 500px;
+	background-color: #F781F3;
+}
+
+
+.allmargin{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+/*sssssssssssss*/
+.header .row{
+	margin-right: 0;
+}
