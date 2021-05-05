@@ -8,6 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="./static/banhang.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
@@ -37,24 +39,60 @@
 				<img src="./static/logo.png" alt="">
 			</div>
 
-			<div class="header-center-search col-sm-6 ">
-				<div class="input-group mb-3">
-					<div class="input-group-prepend">
-						<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="#">Another action</a>
-						<a class="dropdown-item" href="#">Something else here</a>
-						<div role="separator" class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">Separated link</a>
-					</div>
-					</div>
-				<input type="text" class="form-control" aria-label="Text input with dropdown button">
-				</div>
+			<div class="header-center-search col-sm-5 ">
+				<form>
+				    <div class="input-group mt-3 mb-3">
+				      	<div class="input-group-prepend">
+				        	<button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+				          Dropdown button
+				        	</button>
+				        	<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Link 1</a>
+								<a class="dropdown-item" href="#">Link 2</a>
+								<a class="dropdown-item" href="#">Link 3</a>
+				        	</div>
+				      	</div>
+				    	<input type="text" class="form-control" placeholder="Username">
+				    </div>
+				    <span class="input-group-btn">
+				    	<button class="btn icon-fallback-text"></button>
+				    	<i class="fa fa-search">
+				    		
+				    	</i>
+				    </span>
+				</form>
 			</div>
 
-			<div class="header-center-user col-sm-3">
-				<h2>ss</h2>
+			<div class="header-center-user col-sm-2">
+				<div class="user-name">
+					<div>
+						<img src="//bizweb.dktcdn.net/100/374/880/themes/748270/assets/user.svg?1619507796536">
+						<span>
+							"Khách"
+							<span>Tài khoản</span>
+						</span>
+					</div>
+				</div>
+				<div class="user-acc">
+					<a href="#">Đăng ký</a>
+					<a href="#">Đăng nhập</a>
+				</div>
+			</div>
+			<div class="header-center-basket col-sm-2">
+				<div class="user-name">
+					<div>
+						<img src="//bizweb.dktcdn.net/100/374/880/themes/748270/assets/user.svg?1619507796536">
+						<span>
+							"0"
+							<span>Giỏ hàng</span>
+						</span>
+					</div>
+				</div>
+				<div class="user-basket">
+					<dir class="user-basket-item">
+						<p>Khong co sang pham nao</p>
+					</dir>
+				</div>
 			</div>
 		</div>
 		<div class="header-menu allmargin">
