@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Document</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <form method="POST">
+            {% csrf_token %}
+            {% for key, value in form.error.items %}
+                {{value}}
+            {% endfor %}
+            <p><lable>Tai khoan:</lable>{{form.username}}</p>
+            <p><lable>mat khau:</lable>{{form.password}}</p>
+            <input type="hidden" name = 'next' value = "/"/>
+            <input type="submit" value = "Dang nhap"/>
+        </form>
+    </body>
+</html>
