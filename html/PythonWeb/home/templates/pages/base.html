@@ -108,7 +108,7 @@
 				<div class="topnav" id="myTopnav">
 					<a href="#home" class="active">Danh muc san pham</a>
 					<a href="#news">Trang chu</a>
-					<a href="#contact">San Pham</a>
+					<a href="/sanpham">San Pham</a>
 					<a href="#about">Lien he</a>
 					<a href="#about">Chung toi</a>
 					<a href="#about">Tin tuc</a>
@@ -136,44 +136,12 @@
 					<li class="col-sm-3 center-hot-item">
 						<img src="{% static 'images/home_giay.jpg' %}" alt="">
 						<a href="#">email me</a>
+						
 					</li>
-					<li class="col-sm-3 center-hot-item">
-						<img src="{% static 'images/home_giay.jpg' %}" alt="">
-						<a href="#">email me</a>
+					<li>
+						{% block content %}
+        				{% endblock  %}
 					</li>
-					<li class="col-sm-3 center-hot-item">
-						<img src="{% static 'images/home_giay.jpg' %}" alt="">
-						<a href="#">email me</a>
-					</li>
-					<li class="col-sm-3 center-hot-item">
-						<img src="{% static 'images/home_giay.jpg' %}" alt="">
-						<a href="#">email me</a>
-					</li>
-					<li class="col-sm-3 center-hot-item">
-						<img src="{% static 'images/home_giay.jpg' %}" alt="">
-						<a href="#">email me</a>
-					</li>
-					<li class="col-sm-3 center-hot-item">
-						<img src="{% static 'images/home_giay.jpg' %}" alt="">
-						<a href="#">email me</a>
-					</li>
-					<li class="col-sm-3 center-hot-item">
-						<img src="{% static 'images/home_giay.jpg' %}" alt="">
-						<a href="#">email me</a>
-					</li>
-					<li class="col-sm-3 center-hot-item">
-						<img src="{% static 'images/home_giay.jpg' %}" alt="">
-						<a href="#">email me</a>
-					</li>
-					<li class="col-sm-3 center-hot-item">
-						<img src="{% static 'images/home_giay.jpg' %}" alt="">
-						<a href="#">email me</a>
-					</li>
-					<li class="col-sm-3 center-hot-item">
-						<img src="{% static 'images/home_giay.jpg' %}" alt="">
-						<a href="#">email me</a>
-					</li>
-					
 				</ul>
 			</div>
 		</div>
@@ -190,10 +158,11 @@
 			
 		</div>
 	</div>
-
-	<div class="footer">
-		
-	</div>
+	<footer>
+		<div class="footer">
+			
+		</div>
+	</footer>
 <script>
 function myFunction() {
 	var x = document.getElementById("myTopnav");
@@ -205,8 +174,5 @@ function myFunction() {
 		}
 	}
 </script>
-        
-        {% block content %}
-        {% endblock  %}
     </body>
 </html>
