@@ -85,8 +85,26 @@ body{
 /*header-img-item*/
 .center-hot-item{
 	margin: 10px;
+	width:300px;
+	height: 200px;
+	position: relative;
+}
+.center-hot-item img{
+	width: 300px;
+	height: auto;
+	position: absolute;
+}
+.center-hot-item a{
+	position: absolute;
+	width: 300px;
+	height: auto;
+	margin-top: 172px;
 }
 /*end header-img-item*/
+.center-hot-new, .center{
+	width: 100%;
+	height: auto;
+}
 /*menu*/
 body {
   margin: 0;
