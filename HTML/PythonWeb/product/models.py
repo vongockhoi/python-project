@@ -4,6 +4,8 @@ from django.db import models
 class NhanHieu(models.Model):
     TenNH = models.CharField(max_length=100)
     date = models.DateTimeField(auto_now_add=True)
+    def __str__(self):
+        return f"{self.TenNH}"
 class SanPham(models.Model):
     TenNH = models.ForeignKey(NhanHieu, on_delete = models.CASCADE)
     TenSP = models.CharField(max_length=100)

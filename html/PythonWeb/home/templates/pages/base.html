@@ -128,20 +128,13 @@
 		<div class="center-hot allmargin">
 			<div class="center-hot-new">
 				<div>
-					<h1>
+					<h2>
 						Danh muc noi bat
-					</h1>
+					</h2>
 				</div>
 				<ul class="row">
-					<li class="col-sm-3 center-hot-item">
-						<img src="{% static 'images/home_giay.jpg' %}" alt="">
-						<a href="#">email me</a>
-						
-					</li>
-					<li>
-						{% block content %}
-        				{% endblock  %}
-					</li>
+					{% block content %}
+					{% endblock  %}
 				</ul>
 			</div>
 		</div>

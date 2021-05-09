@@ -27,11 +27,15 @@ body{
 	color: #ffffff;
 	text-decoration: none;
 }
-
+/* ------------------center ---------------*/
 .center{
 	height: 500px;
 	background-color: #A9F5F2;
 }
+.center-hot-new ul li{
+	list-style: none;
+}
+/* ------------------end center ------------*/
 .footer{
 	width: 100%;
 	height: 500px;
