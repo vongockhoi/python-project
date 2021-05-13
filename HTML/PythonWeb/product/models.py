@@ -11,4 +11,5 @@ class SanPham(models.Model):
     TenSP = models.CharField(max_length=100)
     SoLuong = models.IntegerField(blank=True,null=True)
     Gia = models.FloatField()
+    image = models.ImageField(null =True)
     date = models.DateTimeField(auto_now_add=True)
